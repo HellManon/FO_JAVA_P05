@@ -1,12 +1,11 @@
 package com.safetynetalerts.model;
 
-import javax.persistence.Entity;
 
-@Entity
+
 public class Firestations {
 	
 	private String address;
-	private int stationNumber;
+	private String stationNumber;
 	
 	//getters setters
 	public String getAddress() {
@@ -15,11 +14,12 @@ public class Firestations {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public int getStationNumber() {
+	public String getStationNumber() {
 		return stationNumber;
 	}
-	public void setStationNumber(int stationNumber) {
+	public void setStationNumber(String stationNumber) {
 		this.stationNumber = stationNumber;
 	}
+
 
 }	

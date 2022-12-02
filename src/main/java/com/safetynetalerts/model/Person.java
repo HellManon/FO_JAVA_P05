@@ -1,18 +1,15 @@
 package com.safetynetalerts.model;
 
-import java.util.List;
-
-public class Persons {
+public class Person {
 
 	private String firsNname;
 	private String lastName;
 	private String adress;
 	private String city;
-	private int zip;
+	private String zip;
 	private String phone;
 	private String email;
-	private String birthdate;
-	private List medication;
+	
 	
 	
 	
@@ -40,10 +37,10 @@ public class Persons {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public int getZip() {
+	public String getZip() {
 		return zip;
 	}
-	public void setZip(int zip) {
+	public void setZip(String zip) {
 		this.zip = zip;
 	}
 	public String getPhone() {
@@ -59,16 +56,17 @@ public class Persons {
 		this.email = email;
 	}
 
-	public String getBirthdate() {
-		return birthdate;
+	public Person(String firstname, String lastname, String address, String city, String zip, String phone, String email) {
+		this.firsNname = firstname;
+		this.lastName = lastname;
+		this.adress = address;
+		this.city = city;
+		this.zip = zip;
+		this.phone = phone;
+		this.email = email;
 	}
-	public void setBirthdate(String birthdate) {
-		this.birthdate = birthdate;
-	}
-	public List getMedication() {
-		return medication;
-	}
-	public void setMedication(List medication) {
-		this.medication = medication;
+	
+	public Person() {
+		
 	}
 }
