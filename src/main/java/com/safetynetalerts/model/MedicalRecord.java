@@ -39,10 +39,10 @@ public class MedicalRecord {
 		this.allergies = allergies;
 	}
 	
-	public MedicalRecord(String firstname, String lastname, String birthdate, String medications, String allergies) {
-		this.firstName = firstname;
-		this.lastName = lastname;
-		this.birthDate = birthdate;
+	public MedicalRecord(String firstName, String lastName, String birthDate, String medications, String allergies) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthDate = birthDate;
 		this.medications = medications;
 		this.allergies = allergies;
 	}

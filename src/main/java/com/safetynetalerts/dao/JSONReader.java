@@ -43,8 +43,8 @@ public class JSONReader implements Reader {
 	public List<MedicalRecord> readMedicalRecord() throws IOException {
 		Any medicalAny = any.get("medicalrecords");
 		List<MedicalRecord> medicalRecords = new ArrayList<>();
-		for (Any medicalrecord : medicalAny)
-			medicalRecords.add(new MedicalRecord(medicalrecord.get("firstname").toString(), medicalrecord.get("lastname").toString(), medicalrecord.get("birthdate").toString(), medicalrecord.get("birthdate").toString(), medicalrecord.get("medications").toString(), medicalrecord.get("allergies").toString()));
+		for (Any medical : medicalAny)
+			medicalRecords.add(new MedicalRecord(medical.get("firstName").toString(), medical.get("lastName").toString(), medical.get("birthDate").toString(), medical.get("birthdate").toString(), medical.get("medications").toString()));
 		return medicalRecords;
 	}
 
