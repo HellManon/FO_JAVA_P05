@@ -2,22 +2,20 @@ package com.safetynetalerts.model;
 
 public class Person {
 
-	private String firsNname;
+	private String firstName;
 	private String lastName;
-	private String adress;
+	private String address;
 	private String city;
 	private String zip;
 	private String phone;
 	private String email;
 	
 	
-	
-	
-	public String getFirsNname() {
-		return firsNname;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirsNname(String firsNname) {
-		this.firsNname = firsNname;
+	public void setFirstNname(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getLastName() {
 		return lastName;
@@ -25,11 +23,11 @@ public class Person {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public String getAdress() {
-		return adress;
+	public String getAddress() {
+		return address;
 	}
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	public String getCity() {
 		return city;
@@ -57,9 +55,9 @@ public class Person {
 	}
 
 	public Person(String firstname, String lastname, String address, String city, String zip, String phone, String email) {
-		this.firsNname = firstname;
+		this.firstName = firstname;
 		this.lastName = lastname;
-		this.adress = address;
+		this.address = address;
 		this.city = city;
 		this.zip = zip;
 		this.phone = phone;
