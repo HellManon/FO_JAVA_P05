@@ -7,8 +7,6 @@ import com.safetynetalerts.model.MedicalRecord;
 import java.util.List;
 
 import lombok.Data;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,9 +18,8 @@ import java.io.IOException;
 @Data
 @Service
 public class MedicalRecordService implements IMedicalRecordService {
-    private static Logger logger = LogManager.getLogger("MedicalRecordService");
-
-    @Autowired
+    
+	@Autowired
     JSONReader jsonReader;
 
     private List<MedicalRecord> list;

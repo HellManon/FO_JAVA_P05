@@ -5,7 +5,9 @@ import com.jsoniter.any.Any;
 import com.safetynetalerts.model.FireStation;
 import com.safetynetalerts.model.MedicalRecord;
 import com.safetynetalerts.model.Person;
-import org.slf4j.Logger;
+
+import lombok.Data;
+
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -16,10 +18,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Data
 @Component
 public class JSONReader implements Reader {
 
-	private static final Logger log = org.slf4j.LoggerFactory.getLogger(JSONReader.class);
 	String input = "src/main/resources/data.json";
 	byte[] bytesFile = Files.readAllBytes(new File(input).toPath());
 	JsonIterator iter = JsonIterator.parse(bytesFile);

@@ -4,8 +4,6 @@ import com.safetynetalerts.dao.JSONReader;
 import com.safetynetalerts.dao.Reader;
 import com.safetynetalerts.model.FireStation;
 import lombok.Data;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,8 +16,8 @@ import java.util.Map;
 @Data
 @Service
 public class FireStationService implements IFireStationService {
-    private static Logger logger = LogManager.getLogger("FireStationService");
 
+	
     @Autowired
     JSONReader jsonReader;
 
