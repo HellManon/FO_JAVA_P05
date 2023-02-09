@@ -10,6 +10,8 @@ import com.safetynet.alerts.model.MedicalRecord;
 import com.safetynet.alerts.model.Person;
 import com.safetynet.alerts.service.PersonAge;
 
+import lombok.Data;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,7 @@ import java.util.stream.Collectors;
  * Service that allows to get a fire station's list with address's list that contains person's info of inhabitant, from list of specified fire station.
  */
 
+@Data
 @Service
 public class FloodService implements IFloodService {
     private static final Logger logger = LogManager.getLogger("FloodService");

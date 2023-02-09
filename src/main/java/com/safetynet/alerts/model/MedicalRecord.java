@@ -1,7 +1,11 @@
 package com.safetynet.alerts.model;
 
-public class MedicalRecord {
+import com.jsoniter.annotation.JsonProperty;
+import com.jsoniter.fuzzy.MaybeStringIntDecoder;
 
+public class MedicalRecord {
+	
+	@JsonProperty(decoder = MaybeStringIntDecoder.class)
 	private String firstName;
 	private String lastName;
 	private String birthDate;

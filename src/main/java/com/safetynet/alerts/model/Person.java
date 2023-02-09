@@ -1,7 +1,11 @@
 package com.safetynet.alerts.model;
 
+import com.jsoniter.annotation.JsonProperty;
+import com.jsoniter.fuzzy.MaybeStringIntDecoder;
+
 public class Person {
 
+	@JsonProperty(decoder = MaybeStringIntDecoder.class)
 	private String firstName;
 	private String lastName;
 	private String address;

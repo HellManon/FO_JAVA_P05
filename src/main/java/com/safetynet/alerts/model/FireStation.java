@@ -4,8 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.jsoniter.annotation.JsonProperty;
+import com.jsoniter.fuzzy.MaybeStringIntDecoder;
+
 public class FireStation {
 
+	@JsonProperty(decoder = MaybeStringIntDecoder.class)
 	private Set<String> addresses = new HashSet<>();
 	private String address;
 	private String station;
@@ -40,4 +44,5 @@ public class FireStation {
     public Set<String> getAddresses() {
         return addresses.stream().collect(Collectors.toSet());
     }
+    
 }	

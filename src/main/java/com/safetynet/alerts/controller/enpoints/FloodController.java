@@ -20,7 +20,7 @@ public class FloodController {
     @Autowired
     FloodService floodService;
 
-    @GetMapping("/flood")
+    @GetMapping("/flood/stations")
     public List<StationAndAddress> getFlood(@RequestParam List<String> stations) {
         return floodService.getFlood(stations);
     }
